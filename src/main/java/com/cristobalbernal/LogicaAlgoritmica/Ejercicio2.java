@@ -1,5 +1,6 @@
 package com.cristobalbernal.LogicaAlgoritmica;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -30,7 +31,7 @@ public class Ejercicio2 {
         //Comprobamos que numero introducido sea mayor de 0 y si es asi mostrmos los la mitjana de la nota y sino es menos de 0
         //hacemos que salte no has introduccido ninguna nota!!!
         if (numeroIntroduccido > 0){
-            int calculo = numeroIntroduccido/cantidadNumeros;
+            double calculo = (float) numeroIntroduccido/cantidadNumeros;
             System.out.println("Esta es la mitjana de las notas " + calculo);
         }else {
             System.out.println("No has introduccido ninguna nota");
